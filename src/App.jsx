@@ -19,6 +19,7 @@ function App() {
                     style={{ width: '200px', borderRadius: '25%', border: '2px solid chocolate' }}
                 />
             </div>
+            {/* No agregar style a este div */}
             <div style={{ backgroundColor: 'navajoWhite', borderRadius: '10px', padding: '20px' }}>
                 <h3 style={{ fontFamily: 'sans-serif', color: 'maroon', margin: '0px' }}>Ingredientes:</h3>
                 <ul>
