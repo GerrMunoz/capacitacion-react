@@ -1,27 +1,34 @@
+import Title from './components/Title/Title';
+import Image from './components/Image/Image';
 import './styles.css';
+import List from './components/List/List';
+import ListItem from './components/ListItem/ListItem';
 
 function App() {
     return (
         <div>
-            <h1>Receta brownies</h1>
+            <Title isBig={true}>Receta brownies</Title>
+
             <div>
-                <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/6/68/Chocolatebrownie.JPG"
+                <Image
+                    url="https://upload.wikimedia.org/wikipedia/commons/6/68/Chocolatebrownie.JPG"
                     alt="brownie-imagen"
                 />
             </div>
+
             <div className="ingredientes">
-                <h3>Ingredientes:</h3>
-                <ul>
-                    <li className="ingrediente-secreto">Ingrediente secreto de Gera</li>
-                    <li>75gr de manteca</li>
-                    <li>150gr de chocolate</li>
-                    <li>2 huevos</li>
-                    <li>1 taza de azúcar</li>
-                    <li>100gr de harina leudante</li>
-                    <li className="ingrediente-opcional">Chips de chocolate (opcional)</li>
-                    <li className="ingrediente-opcional">Esencia de vainilla (opcional)</li>
-                </ul>
+                <Title>Ingredientes</Title>
+
+                <List>
+                    <ListItem className="ingrediente-secreto">Ingrediente secreto de Gera</ListItem>
+                    <ListItem>75gr de manteca</ListItem>
+                    <ListItem>150gr de chocolate</ListItem>
+                    <ListItem>2 huevos</ListItem>
+                    <ListItem>1 taza de azúcar</ListItem>
+                    <ListItem>100gr de harina leudante</ListItem>
+                    <ListItem className="ingrediente-opcional">Chips de chocolate (opcional)</ListItem>
+                    <ListItem className="ingrediente-opcional">Esencia de vainilla (opcional)</ListItem>
+                </List>
             </div>
         </div>
     );

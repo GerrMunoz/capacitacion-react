@@ -1,0 +1,14 @@
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: -0.2px;
+    color: maroon;
+}
+
+.title-small {
+    font-size: 22px;
+}
+
+.title-big {
+    font-size: 32px;
+}
