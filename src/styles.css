@@ -2,37 +2,3 @@ body {
     background-color: burlywood;
     font-family: sans-serif;
 }
-
-h1 {
-    letter-spacing: -0.2px;
-    color: maroon;
-}
-
-img {
-    width: 200px;
-    border-radius: 25%;
-    border-width: 2px;
-    border-color: chocolate;
-    border-style: solid;
-}
-
-h3 {
-    letter-spacing: -0.2px;
-    color: maroon;
-}
-
-li {
-    letter-spacing: -0.2px;
-    font-size: 18px;
-    margin: 2px 0;
-    list-style-type: square;
-}
-
-li.ingrediente-opcional {
-    color: darkSlateGray;
-}
-
-li.ingrediente-secreto {
-    font-weight: bold;
-    color: chocolate;
-}
