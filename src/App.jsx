@@ -13,9 +13,9 @@ function App() {
                     <li>2 huevos</li>
                     <li>1 taza de azúcar</li>
                     <li>100gr de harina</li>
-                    <li>Chips de chocolate (opcional)</li>
-                    <li>Esencia de vainilla (opcional)</li>
-                    <li>Ingrediente secreto de Gera</li>
+                    <li className="ingrediente-opcional">Chips de chocolate (opcional)</li>
+                    <li className="ingrediente-opcional">Esencia de vainilla (opcional)</li>
+                    <li className="ingrediente-secreto">Ingrediente secreto de Gera</li>
                 </ul>
             </div>
         </div>

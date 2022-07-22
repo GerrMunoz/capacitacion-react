@@ -28,7 +28,11 @@ li {
     list-style-type: square;
 }
 
-li:last-child {
+li.ingrediente-opcional {
+    color: darkSlateGray;
+}
+
+li.ingrediente-secreto {
     font-weight: bold;
     color: chocolate;
 }
