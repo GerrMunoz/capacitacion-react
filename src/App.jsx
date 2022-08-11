@@ -3,9 +3,23 @@ import Title from './components/Title/Title';
 import Image from './components/Image/Image';
 import List from './components/List/List';
 import ListItem from './components/ListItem/ListItem';
+import { useState } from 'react';
 import './styles.css';
 
+const listaIngredientes = [
+    { name: '75gr de manteca' },
+    { name: '150gr de chocolate' },
+    { name: '2 huevos' },
+    { name: '150gr de chocolate' },
+    { name: '100gr de harina leudante' },
+    { name: 'Ingrediente secreto de Gera', isImportant: true },
+    { name: 'Chips de chocolate (opcional)', isOptional: true },
+    { name: 'Esencia de vainilla (opcional)', isOptional: true }
+];
+
 function App() {
+    const [showList, setShowList] = useState(true);
+
     return (
         <Box padding="16px">
             <Title>Receta brownies</Title>
@@ -15,16 +29,27 @@ function App() {
             <Box backgroundColor="navajowhite" borderRadius="10px" padding="16px" marginTop="8px">
                 <Title isSmall>Ingredientes</Title>
 
-                <List>
-                    <ListItem>75gr de manteca</ListItem>
-                    <ListItem>150gr de chocolate</ListItem>
-                    <ListItem>2 huevos</ListItem>
-                    <ListItem>1 taza de azúcar</ListItem>
-                    <ListItem>100gr de harina leudante</ListItem>
-                    <ListItem isImportant={true}>Ingrediente secreto de Gera</ListItem>
-                    <ListItem isOptional={true}>Chips de chocolate (opcional)</ListItem>
-                    <ListItem isOptional={true}>Esencia de vainilla (opcional)</ListItem>
-                </List>
+                <button
+                    onClick={function () {
+                        if (showList === true) {
+                            setShowList(false);
+                        } else {
+                            setShowList(true);
+                        }
+                    }}
+                >
+                    Mostrar ingrendientes
+                </button>
+
+                {showList && (
+                    <List>
+                        {listaIngredientes.map((ingrediente) => (
+                            <ListItem isImportant={ingrediente.isImportant} isOptional={ingrediente.isOptional}>
+                                {ingrediente.name}
+                            </ListItem>
+                        ))}
+                    </List>
+                )}
             </Box>
         </Box>
     );
