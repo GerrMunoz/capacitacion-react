@@ -1,0 +1,24 @@
+.navbar {
+    background-color: sienna;
+    padding: 8px 0;
+    margin: 0;
+}
+
+.navbar-item {
+    color: burlywood;
+    text-decoration: none;
+    margin-right: 8px;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.navbar-item:hover {
+    color: beige;
+    background-color: peru;
+}
+
+.navbar-item-active {
+    color: beige;
+    background-color: peru;
+    font-weight: bold;
+}

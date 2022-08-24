@@ -2,6 +2,15 @@ function Box(props) {
     return (
         <div
             style={{
+                display: props.display,
+                flexDirection: props.flexDirection,
+                justifyContent: props.justifyContent,
+                alignItems: props.alignItems,
+                flexWrap: props.flexWrap,
+                flexGrow: props.flexGrow,
+                rowGap: props.rowGap,
+                columnGap: props.columnGap,
+                gap: props.gap,
                 height: props.height,
                 width: props.height,
                 backgroundColor: props.backgroundColor,

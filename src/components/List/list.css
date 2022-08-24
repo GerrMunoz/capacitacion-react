@@ -1,0 +1,7 @@
+.list {
+    margin: 0px;
+}
+
+.list-horizontal > li {
+    display: inline;
+}

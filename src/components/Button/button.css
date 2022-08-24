@@ -7,8 +7,7 @@
     background-color: Peru;
     box-shadow: 0px 2px 4px SaddleBrown;
     padding: 8px;
-    margin-top: 4px;
-    margin-right: 8px;
+    margin: 8px 4px 8px 0px;
 }
 
 .button:hover {
